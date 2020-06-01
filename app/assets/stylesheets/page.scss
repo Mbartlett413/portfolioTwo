@@ -1,0 +1,38 @@
+// Place all the styles related to the page controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+body{
+	background: url('/assets/pattern.png');
+}
+
+.jumbotron {
+	background: url('/assets/computer.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	color: white;
+}
+
+.tribe_class{
+	color: pink;
+}
+
+.container-fluid{
+	min-height: 500px;
+}
+
+.sectionHeight:after{
+	clear: both;
+}
+
+.cardContainer{
+	clear:both;
+}
+
+ul {
+  list-style-type: none;
+}
+
+
