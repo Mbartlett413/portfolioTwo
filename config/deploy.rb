@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.14.1"
 
-set :application, "Glass Minds LLC"
+set :application, "myapp"
 set :repo_url, "https://github.com/Mbartlett413/portfolioTwo"
 #set :repo_url, "git@example.com:me/my_repo.git"
 
