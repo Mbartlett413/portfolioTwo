@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BillyApp</title>
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="AMSELi411pUt7m0j0wpWQP3pGA80+bUyJgx/RD/Dt7o11LgPCCDwhJYNLpqQx0jXqKu/UuBLapMMQ9azn7fvqA==" />
+    
+
+    <link rel="stylesheet" media="all" href="/assets/estimates.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/scaffolds.self-1f94d8b826f5f2864628db7726c3e182ad2dcb7f41e1a951279600b68056bb19.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/application.self-1a845080ebec485ef61ec741be333b6aa25b5ac89fff2a845e8843f8a645c87b.css?body=1" data-turbolinks-track="reload" />
+    <script src="/assets/rails-ujs.self-81c572f39b69ead02e3f97fe43b76954a434591bc2837e3a35af212315e67569.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/activestorage.self-1ed4604ac2170045f1ffca4edb81a75246661555e4f9cf682bb8a21825e32e1c.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/jquery3.self-e200ee796ef24add7054280d843a80de75392557bb4248241e870fac0914c0c1.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/popper.self-55bd1408b0e4ff3edf21524b78fbe2266615c8015ce0e5f0828089b1de27d63c.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/button.self-aa281654a03a6d73cb5bc575ae10ef62be8bde46ec6afb5f369ec9b759b84de9.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/util.self-f05d6fa816142dcf4bf141250334c39fa83d4dc27ff1f9ec5e747a7854c96474.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/tooltip.self-76907c7c3bf0169a037cea6dd715373bdbbadc56bdd57a611662165bb1ec43b2.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/popover.self-b3926cb6f460a51fdab99d1984cff6d18d12ee973fc40f50a51cb5c4f467ae3c.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/tab.self-91ae0a896e11f8871a31f62d4cb8061a2bce8aa7092f49fcc6d138b204c2d8ab.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/alert.self-96da444a0527930e9ef0821f95502ae8e92b34cf6c828d12d5d6d52efb5049d3.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/carousel.self-0d45b5bafbdb83cafc1c18ed06875a2d95831e665193673de85d96245a576ac6.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/dropdown.self-23f5723fda1fc5770b0e7954fb1ce5902582c6498731c119cd6a1d1af6535c41.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/modal.self-649e67b843879b9db70e6382929d4b71380755a391b76b672ffa411da80a002a.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/toast.self-f7d122d6d522019246c7fb7c7aaabce446525032f73af921298b91df747d92e0.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/collapse.self-a60e35dca0ec9e1e41df2a83209b417923ddeb617589871af5cc981130edc203.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/scrollspy.self-de0ae9f70d1280c1f37da2eb80f57483ca4602b6828bcd1889c67d7fcbe695ec.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/action_cable.self-69fddfcddf4fdef9828648f9330d6ce108b93b82b0b8d3affffc59a114853451.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/cable.self-8484513823f404ed0c0f039f75243bfdede7af7919dda65f2e66391252443ce9.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/estimates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/application.self-6a7f81c89608537f1c0b5e6e1a1cad14caec515ae09b88e0406efa9bcbfd4752.js?body=1" data-turbolinks-track="reload"></script>
+  </head>
+
+  <body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>New Estimate</h1>
+
+<form action="/estimates" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="62elj8CCt5sf9fCOWH63XUE89t7ptSQipu434mcDaDk7yUccWE697YABr6rOhcNoaW38J1HeYZ6b/uKlKNzV1g==" />
+
+<div class = "container-fluid"> 
+
+<div class="row col-12">
+  <div class="col-sm-12 col-md-5 col-lg-5">  <!-- LEFT -->
+    <!-- Customer Basic Info -->
+    <div class="row">
+      <h1 class="col-12" >Main Info</h1><br>
+      <div class="col-lg-5 col-md-5 col-sm-12">
+
+          <div class="form-group">
+          <label for="estimate_name">Name</label>
+          <input class="form-control" type="text" name="estimate[name]" id="estimate_name" />
+          </div>
+
+          <div class="form-group">
+          <label for="estimate_origin_address">Origin address</label>
+          <input class="form-control" type="text" name="estimate[origin_address]" id="estimate_origin_address" />
+          </div>
+
+          <div class="form-group">
+          <label for="estimate_dest_addres">Dest addres</label>
+          <input class="form-control" type="text" name="estimate[dest_addres]" id="estimate_dest_addres" />
+          </div>
+
+          <div class="form-group">
+          <label for="estimate_home_phone">Home phone</label>
+          <input class="form-control" type="text" name="estimate[home_phone]" id="estimate_home_phone" />
+          </div>
+
+          <div class="form-group">
+          <label for="estimate_bus_phone">Bus phone</label>
+          <input class="form-control" type="text" name="estimate[bus_phone]" id="estimate_bus_phone" />
+          </div>
+      </div>
+
+      <div class="col-lg-5 col-md-5 col-sm-12">
+          <div class="form-group">
+          <label for="estimate_account">Account</label>
+          <input class="form-control" type="text" name="estimate[account]" id="estimate_account" />
+          </div>
+
+          <div class="form-group">
+          <label for="estimate_pack_date">Pack date</label>
+          <input class="form-control" type="text" name="estimate[pack_date]" id="estimate_pack_date" />
+          </div>
+
+          <div class="form-group">
+          <label for="estimate_load_date">Load date</label>
+          <input class="form-control" type="text" name="estimate[load_date]" id="estimate_load_date" />
+          </div>
+
+          <div class="form-group">
+          <label for="estimate_delivery_date">Delivery date</label>
+          <input class="form-control" type="text" name="estimate[delivery_date]" id="estimate_delivery_date" />
+          </div>
+
+          <div class="form-group">
+          <label for="estimate_special_instructions">Special instructions</label>
+          <input class="form-control" type="text" name="estimate[special_instructions]" id="estimate_special_instructions" />
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-6 col-lg-6">  <!-- RIGHT -->
+    <!-- Customer WIll Move Table -->
+    <div class="row table-responsive-md">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+              <th scope="col-8"> </th>
+
+              <th scope="col-2" class="text-right">Service Facilities</th>
+          </tr>
+          <tr>
+            <th scope="col"> Customer Will Move</th>
+            <th scope="col"> Origin</th>
+            <th scope="col"> Destination</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr scope="row">
+            <td>
+              <ul>
+                <li>
+                  <input name="estimate[small_lamps]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[small_lamps]" id="estimate_small_lamps" />
+                  <label class="form-check-label" for="estimate_small_lamps">Small lamps</label>
+                </li>
+                <li>
+                  <input name="estimate[dishes]" type="hidden" value="0" /><input class="form-check-input pull-right" type="checkbox" value="1" name="estimate[dishes]" id="estimate_dishes" />
+                  <label class="form-check-label pull-right" for="estimate_dishes">Dishes</label>    
+                </li>
+              </ul>
+            </td>
+            <td>
+              <input name="estimate[origin_elevator]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[origin_elevator]" id="estimate_origin_elevator" /> 
+              <label class="form-check-label" for="estimate_origin_elevator">Origin elevator</label>
+            </td>
+            <td>
+              <input name="estimate[destination_elevator]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[destination_elevator]" id="estimate_destination_elevator" />
+              <label class="form-check-label" for="estimate_destination_elevator">Destination elevator</label>  
+            </td>
+          </tr>
+
+          <tr scope="row">
+            <td>
+              <ul>
+                <li>
+                  <input name="estimate[clothes]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[clothes]" id="estimate_clothes" />
+                    <label class="form-check-label" for="estimate_clothes">Clothes</label>
+                </li>
+                <li>
+                  <input name="estimate[all_breakables]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[all_breakables]" id="estimate_all_breakables" />
+                    <label class="form-check-label" for="estimate_all_breakables">All breakables</label>
+                </li>
+              </ul>
+            </td>
+
+            <td>
+              <input name="estimate[origin_carry_flights]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[origin_carry_flights]" id="estimate_origin_carry_flights" />
+              <label class="form-check-label" for="estimate_origin_carry_flights">Origin carry flights</label>
+            </td>
+            <td>
+              <input name="estimate[destination_carry_flights]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[destination_carry_flights]" id="estimate_destination_carry_flights" />
+              <label class="form-check-label" for="estimate_destination_carry_flights">Destination carry flights</label>
+            </td>
+          </tr scope="row">
+            <td>
+              <ul>
+                <li>
+                    <input name="estimate[mirrors]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[mirrors]" id="estimate_mirrors" />
+                    <label class="form-check-label" for="estimate_mirrors">Mirrors</label>
+                </li>
+                <li>
+                    <input name="estimate[pictures]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[pictures]" id="estimate_pictures" />
+                    <label class="form-check-label" for="estimate_pictures">Pictures</label>              
+                </li>
+              </ul>
+            </td>
+            <td>
+              <input name="estimate[origin_lower_hoist]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[origin_lower_hoist]" id="estimate_origin_lower_hoist" />
+              <label class="form-check-label" for="estimate_origin_lower_hoist">Origin lower hoist</label>
+            </td>
+            <td>
+              <input name="estimate[destination_lower_hoist]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[destination_lower_hoist]" id="estimate_destination_lower_hoist" />
+              <label class="form-check-label" for="estimate_destination_lower_hoist">Destination lower hoist</label>
+            </td>
+          <tr>
+            
+          </tr>
+
+          <tr scope="row">
+            <td>
+              <ul>
+                <li> 
+                  <input name="estimate[everything_but_furniture]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[everything_but_furniture]" id="estimate_everything_but_furniture" />
+                  <label class="form-check-label" for="estimate_everything_but_furniture">Everything but furniture</label>
+                </li>
+              </ul>     
+            </td>
+            <td>
+              <input name="estimate[origin_long_carry]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[origin_long_carry]" id="estimate_origin_long_carry" />
+              <label class="form-check-label" for="estimate_origin_long_carry">Origin long carry</label>
+              
+            </td>
+            <td>
+              <input name="estimate[destination_long_carry]" type="hidden" value="0" /><input class="form-check-input" type="checkbox" value="1" name="estimate[destination_long_carry]" id="estimate_destination_long_carry" />
+              <label class="form-check-label" for="estimate_destination_long_carry">Destination long carry</label>
+              
+            </td>
+          </tr>
+        </tbody>
+
+      </table>
+    </div>    
+  </div>
+</div>
+
+<div class="row col-12">
+  <!-- LEFT -->
+  <div class="col-sm-12 col-md-4 col-lg-4">
+    <!-- ABC Section Header -->
+    <div class="row">
+      <h1>Estimated Cost Of Services</h1><br>
+      <div class="form-group col-12">
+        <p>
+          Based On
+          <input class="form-control-xs" type="text" name="estimate[pounds]" id="estimate_pounds" /> Lbs 
+          <input class="form-control-xs" type="text" name="estimate[rooms]" id="estimate_rooms" />Rooms 
+          <input class="form-control-xs" type="text" name="estimate[cubic_feet]" id="estimate_cubic_feet" />Cubic Feet 
+        </p>  
+      </div>
+    </div>
+    <!-- A-->
+    <div class="row">
+      <h4>A. Local Moving </h4>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <p>
+          Van and <input class="form-control-xs" type="text" name="estimate[local_moving_movers]" id="estimate_local_moving_movers" /> movers at <input class="form-control-xs" type="text" name="estimate[local_moving_per_hour]" id="estimate_local_moving_per_hour" /> per hour 
+        </p>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <p>
+          Estimated at <input class="form-control-xs" type="text" name="estimate[local_moving_estimated_hours]" id="estimate_local_moving_estimated_hours" /> hours
+        </p>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <p> 
+          Driving Time <input class="form-control-xs" type="text" name="estimate[local_moving_driving_time]" id="estimate_local_moving_driving_time" /> hours
+        </p>
+      </div>
+
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <p>
+          Insurance Charge $<input class="form-control-xs" type="text" name="estimate[local_moving_insurance_charge]" id="estimate_local_moving_insurance_charge" /> at $<input class="form-control-xs" type="text" name="estimate[local_moving_per_thousand]" id="estimate_local_moving_per_thousand" /> per $1,000.00 declared value.
+        </p>    
+      </div>
+    </div>
+    <!-- B -->
+    <div class="row">
+      <h4>B. Storage </h4>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <p> Van and <input class="form-control-xs" type="text" name="estimate[storage_movers]" id="estimate_storage_movers" /> movers at <input class="form-control-xs" type="text" name="estimate[storage_per_hour]" id="estimate_storage_per_hour" /> per hour</p>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <p>Estimated at <input class="form-control-xs" type="text" name="estimate[storage_estimated_hours]" id="estimate_storage_estimated_hours" /> hours</p>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <p>Warehouse handling in <input class="form-control-xs" type="text" name="estimate[storage_handling_per_crate]" id="estimate_storage_handling_per_crate" /> per crate</p>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <p>Monthly Storage Charge <input class="form-control-xs" type="text" name="estimate[storage_monthly_per_crate]" id="estimate_storage_monthly_per_crate" /> per crate</p>
+      </div>
+      <div class="col-lg-12 col-md-12 col-sm-12">
+        <p>Insurance Charge $<input class="form-control-xs" type="text" name="estimate[storage_insurance_charge]" id="estimate_storage_insurance_charge" /> at $<input class="form-control-xs" type="text" name="estimate[storage_per_hundred_per_month]" id="estimate_storage_per_hundred_per_month" /> per $100.00 declared value per month</p>
+      </div>
+    </div>
+    <!-- C -->
+    <div class="row">
+      <h4> C. Packing Services </h4>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="form-group">
+            <label class="form-control-label" for="estimate_container_charges">Container charges</label>
+            <input class="form-control-xs" type="text" name="estimate[container_charges]" id="estimate_container_charges" />
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="form-group">
+            <label class="form-control-label" for="estimate_packing_labor">Packing labor</label>
+            <input class="form-control-xs" type="text" name="estimate[packing_labor]" id="estimate_packing_labor" />
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="form-group">
+            <label class="form-control-label" for="estimate_unpacking_labor">Unpacking labor</label>
+            <input class="form-control-xs" type="text" name="estimate[unpacking_labor]" id="estimate_unpacking_labor" />
+          </div>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="form-group">
+            <label class="form-control-label" for="estimate_other_service_desc">Other service desc</label>
+            <input class="form-control-xs" type="text" name="estimate[other_service_desc]" id="estimate_other_service_desc" />
+
+            <label class="form-control-label" for="estimate_other_service_cost">Other service cost</label>
+            <input class="form-control-xs" type="text" name="estimate[other_service_cost]" id="estimate_other_service_cost" />
+          </div>
+        </div>
+    </div>
+    <!-- D -->
+    <div class="row">
+        <h4> C. Total </h4>
+
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label" for="estimate_estimate_total">Estimate total</label>
+              <input class="form-control-xs" type="text" name="estimate[estimate_total]" id="estimate_estimate_total" />
+            </div>
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="form-group">
+              <label class="form-control-label" for="estimate_down_payment">Down payment</label>
+              <input class="form-control-xs" type="text" name="estimate[down_payment]" id="estimate_down_payment" />
+            </div>
+          </div>
+    </div>
+
+  </div><!-- End-->
+
+
+
+  <!-- Right -->
+  <div class="col-sm-12 col-md-6 col-lg-6">
+      <!-- Estimated Containers Table-->
+      <div class="row table-responsive-xs">
+        <table class="table table-striped">
+
+          <thead>
+            <tr>
+                <th scope="col-8"><h6>C. Estimated Containers (Packing/Unpacking)</h6> </th>
+                <th scope="col-4"></th>
+            </tr>
+
+            <tr>
+              <th scope="col-2"></th>
+              <th scope="col-3"> Containers</th>
+              <th></th>
+              <!-- <th></th> Comment Out Total -->
+              <th scope="col-3"> Packing</th>
+            </tr>
+
+            <tr>
+              <th scope="col-2">Description</th>
+              <th>Est Number</th>
+              <th>Per Unit</th>
+              <!-- <th>Total</th> -->
+              <th>Est Number</th>
+              <th>Per Unit</th>
+              <!-- <th> Total</th> -->
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><label class="form-control-label" for="estimate_containers_est_num_barrel_dish_packs">Containers est num barrel dish packs</label></td>
+              <td><input class="form-control-xs" type="text" name="estimate[containers_est_num_barrel_dish_packs]" id="estimate_containers_est_num_barrel_dish_packs" /></td>
+              <td><input class="form-control-xs" type="text" name="estimate[containers_per_unit_barrel_dish_packs]" id="estimate_containers_per_unit_barrel_dish_packs" /></td>
+              <!--<td></td>-->
+              <td><input class="form-control-xs" type="text" name="estimate[packing_est_num_barrel_dish_packs]" id="estimate_packing_est_num_barrel_dish_packs" /></td>
+              <td><input class="form-control-xs" type="text" name="estimate[packing_per_unit_barrel_dish_packs]" id="estimate_packing_per_unit_barrel_dish_packs" /></td>
+              <!--<td></td>-->
+
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_carton_one_n_half">Containers est num carton one n half</label></td>
+              <td><input type="text" name="estimate[containers_est_num_carton_one_n_half]" id="estimate_containers_est_num_carton_one_n_half" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_carton_one_n_half]" id="estimate_containers_per_unit_carton_one_n_half" /></td>
+              <!-- <td></td> -->
+              <td><input type="text" name="estimate[packing_est_num_carton_one_n_half]" id="estimate_packing_est_num_carton_one_n_half" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_carton_one_n_half]" id="estimate_packing_per_unit_carton_one_n_half" /></td>
+              <!-- <td></td> -->
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_carton_three">Containers est num carton three</label></td>
+              <td><input type="text" name="estimate[containers_est_num_carton_three]" id="estimate_containers_est_num_carton_three" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_carton_three]" id="estimate_containers_per_unit_carton_three" /></td>
+              <!-- <td></td> -->
+              <td><input type="text" name="estimate[packing_est_num_carton_three]" id="estimate_packing_est_num_carton_three" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_carton_three]" id="estimate_packing_per_unit_carton_three" /></td>
+              <!-- <td></td> -->
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_carton_four_n_half">Containers est num carton four n half</label></td>
+              <td><input type="text" name="estimate[containers_est_num_carton_four_n_half]" id="estimate_containers_est_num_carton_four_n_half" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_carton_four_n_half]" id="estimate_containers_per_unit_carton_four_n_half" /></td>
+              <!-- <td></td> -->
+              <td><input type="text" name="estimate[packing_est_num_carton_four_n_half]" id="estimate_packing_est_num_carton_four_n_half" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_carton_four_n_half]" id="estimate_packing_per_unit_carton_four_n_half" /></td>
+              <!-- <td></td> -->
+            </tr>
+
+            <tr>
+              <td><label for="estimate_containers_est_num_carton_six">Containers est num carton six</label></td>
+              <td><input type="text" name="estimate[containers_est_num_carton_six]" id="estimate_containers_est_num_carton_six" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_carton_six]" id="estimate_containers_per_unit_carton_six" /></td>
+              <!-- <td></td>-->
+              <td><input type="text" name="estimate[packing_est_num_carton_six]" id="estimate_packing_est_num_carton_six" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_carton_six]" id="estimate_packing_per_unit_carton_six" /></td>
+              <!-- <td></td>-->
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_carton_six_n_half">Containers est num carton six n half</label></td>
+              <td><input type="text" name="estimate[containers_est_num_carton_six_n_half]" id="estimate_containers_est_num_carton_six_n_half" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_carton_six_n_half]" id="estimate_containers_per_unit_carton_six_n_half" /></td>
+              <!-- <td></td>-->
+              <td><input type="text" name="estimate[packing_est_num_carton_six_n_half]" id="estimate_packing_est_num_carton_six_n_half" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_carton_six_n_half]" id="estimate_packing_per_unit_carton_six_n_half" /></td>
+              <!-- <td></td>-->
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_wardrobe_ctn">Containers est num wardrobe ctn</label></td>
+              <td><input type="text" name="estimate[containers_est_num_wardrobe_ctn]" id="estimate_containers_est_num_wardrobe_ctn" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_wardrobe_ctn]" id="estimate_containers_per_unit_wardrobe_ctn" /></td>
+              <!-- <td></td>-->
+              <td><input type="text" name="estimate[packing_est_num_wardrobe_ctn]" id="estimate_packing_est_num_wardrobe_ctn" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_wardrobe_ctn]" id="estimate_packing_per_unit_wardrobe_ctn" /></td>
+              <!-- <td></td>-->
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_mattress_twin">Containers est num mattress twin</label></td>
+              <td><input type="text" name="estimate[containers_est_num_mattress_twin]" id="estimate_containers_est_num_mattress_twin" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_mattress_twin]" id="estimate_containers_per_unit_mattress_twin" /></td>
+              <!-- <td></td>-->
+              <td><input type="text" name="estimate[packing_est_num_mattress_twin]" id="estimate_packing_est_num_mattress_twin" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_mattress_twin]" id="estimate_packing_per_unit_mattress_twin" /></td>
+              <!-- <td></td>-->
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_mattress_full">Containers est num mattress full</label></td>
+              <td><input type="text" name="estimate[containers_est_num_mattress_full]" id="estimate_containers_est_num_mattress_full" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_mattress_full]" id="estimate_containers_per_unit_mattress_full" /></td>
+              <!-- <td></td>-->
+              <td><input type="text" name="estimate[packing_est_num_mattress_full]" id="estimate_packing_est_num_mattress_full" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_mattress_full]" id="estimate_packing_per_unit_mattress_full" /></td>
+              <!-- <td></td>-->
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_mattress_king_queen">Containers est num mattress king queen</label></td>
+              <td><input type="text" name="estimate[containers_est_num_mattress_king_queen]" id="estimate_containers_est_num_mattress_king_queen" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_mattress_king_queen]" id="estimate_containers_per_unit_mattress_king_queen" /></td>
+              <!-- <td></td>-->
+              <td><input type="text" name="estimate[packing_est_num_mattress_king_queen]" id="estimate_packing_est_num_mattress_king_queen" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_mattress_king_queen]" id="estimate_packing_per_unit_mattress_king_queen" /></td>
+              <!-- <td></td>-->
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_mattress_crib">Containers est num mattress crib</label></td>
+              <td><input type="text" name="estimate[containers_est_num_mattress_crib]" id="estimate_containers_est_num_mattress_crib" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_mattress_crib]" id="estimate_containers_per_unit_mattress_crib" /></td>
+              <!-- <td></td>-->
+              <td><input type="text" name="estimate[packing_est_num_mattress_crib]" id="estimate_packing_est_num_mattress_crib" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_mattress_crib]" id="estimate_packing_per_unit_mattress_crib" /></td>
+              <!-- <td></td>-->
+            </tr>
+            <tr>
+              <td><label for="estimate_containers_est_num_mirror_ctn">Containers est num mirror ctn</label></td>
+              <td><input type="text" name="estimate[containers_est_num_mirror_ctn]" id="estimate_containers_est_num_mirror_ctn" /></td>
+              <td><input type="text" name="estimate[containers_per_unit_mirror_ctn]" id="estimate_containers_per_unit_mirror_ctn" /></td>
+              <!-- <td></td>-->
+              <td><input type="text" name="estimate[packing_est_num_mirror_ctn]" id="estimate_packing_est_num_mirror_ctn" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_mirror_ctn]" id="estimate_packing_per_unit_mirror_ctn" /></td>
+              <!-- <td></td>-->
+            </tr>
+            <tr>
+              <td>Crates Min. Size (Mirror)</td>
+              <td>X</td>
+              <td>X</td>
+              <td><input type="text" name="estimate[packing_est_num_crates_min_size_mirror]" id="estimate_packing_est_num_crates_min_size_mirror" /></td>
+              <td><input type="text" name="estimate[packing_per_unit_crates_min_size_mirror]" id="estimate_packing_per_unit_crates_min_size_mirror" /></td>
+              <!--<td></td>
+              <td></td>-->
+            </tr>
+            <tr>
+              <td>Crates > Min. Size(Mirror)</td>
+              <td><input type="text" name="estimate[crates_greater_size_mirror]" id="estimate_crates_greater_size_mirror" /></td>
+              <td>X</td>
+              <td>X</td>
+              <td>X</td>
+              <!--<td>X</td>
+              <td>X</td>-->
+            </tr>
+            <tr>
+              <td>Total Estimated Charges</td>
+              <td><input type="text" name="estimate[total_estimated_charges]" id="estimate_total_estimated_charges" /></td>
+            </tr>
+          </tbody>
+
+        </table>
+      </div>
+  </div>
+</div>
+
+<!-- End Form-->
+
+  <div class="actions">
+    <input type="submit" name="commit" value="Create Estimate" data-disable-with="Create Estimate" />
+  </div>
+</div>
+</form>
+
+<a href="/estimates">Back</a>
+
+  </body>
+</html>
