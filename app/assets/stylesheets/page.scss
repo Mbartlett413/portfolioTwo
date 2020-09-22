@@ -56,7 +56,7 @@ ul {
 .half-left {
 	background-image: url('/assets/code5.jpeg');
 	height: 500px;
-	width: 80%;
+	width: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 70%;
@@ -65,11 +65,15 @@ ul {
 .half-right{
   background-image: url('/assets/book.jpeg');
   height: 500px;
-  width: 80%;
+  width: 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: 50% 70%;
+  background-position: 50% 100%;
   background-size: cover;
+}
+.half-right h3{
+  position: absolute;
+  bottom: 0;
 }
 
 #footer { 
@@ -83,3 +87,5 @@ ul {
   border: solid black 2px;
   margin: 50px;
 }
+
+
