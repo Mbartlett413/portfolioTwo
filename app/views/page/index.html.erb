@@ -33,23 +33,23 @@
 		<div class="row">
 			<div class="skill-set col-lg-6">
 				<ul>
-					<li class="skill-card" id="skill-one" ontouchstart="myOverFunction()" ontouchend="myOffFunction()" ><h3>Guided Experience</h3>
+					<li class="skill-card" id="skill-one" ontouchstart="myOverFunction('one')" ontouchend="myOffFunction('one')" ><h3>Guided Experience</h3>
 						<p>I offer services from start to finish to ensure the end product is as desired creating minimal lag for launching your product.</p>
 					</li>
-					<li class="skill-card"><h3>Web Design</h3>
+					<li class="skill-card" id="skill-two" ontouchstart="myOverFunction('two')" ontouchend="myOffFunction('two')" ><h3>Web Design</h3>
 					<p>Designing mobile first to deliver a modern, fast and easy-to-use front-end design through research, planning and architecture.</p></li>
-					<li class="skill-card"><h3>Web Development</h3>
+					<li class="skill-card" id="skill-three" ontouchstart="myOverFunction('three')" ontouchend="myOffFunction('three')" ><h3>Web Development</h3>
 						<p>I build with modern techniques, choosing the right tool for the job to deliver the best user experience.</p></li>
 				</ul>
 			</div>
 
 			<div class="skill-set col-lg-6">
 				<ul>
-					<li class="skill-card"><h3>eCommerce</h3>
+					<li class="skill-card" id="skill-four" ontouchstart="myOverFunction('four')" ontouchend="myOffFunction('four')" ><h3>eCommerce</h3>
 						<p>I’ve worked on large scale eCommerce websites that have seen results. I make the shopping experience easy, accessible and seamless with the user in mind.</p></li>
-					<li class="skill-card"><h3>Website Management</h3>
+					<li class="skill-card" id="skill-five" ontouchstart="myOverFunction('five')" ontouchend="myOffFunction('five')" ><h3>Website Management</h3>
 						<p>I create management plans that assist our partnership. I offer retainers to provide content changes, software and security updates to ensure long-term success.</p></li>
-					<li class="skill-card"><h3>SEO</h3>
+					<li class="skill-card" id="skill-six" ontouchstart="myOverFunction('six')" ontouchend="myOffFunction('six')" ><h3>SEO</h3>
 						<p>The upkeep of a quality website can bring in new leads. I implement strategies and provide ongoing support that will keep you ahead of your competitors.</p>
 					</li>
 				</ul>
@@ -87,21 +87,97 @@
 
 <script type="text/javascript">
 	var one = document.getElementById('skill-one');
+	var two = document.getElementById('skill-two');
+	var three = document.getElementById('skill-three');
+	var four = document.getElementById('skill-four');
+	var five = document.getElementById('skill-five');
+	var six = document.getElementById('skill-six');
 
 	one.addEventListener('mouseover', function(){
 		console.log("heyy")
 	})
 
-	function myOverFunction(){
-		one.style.backgroundImage = "url('/assets/book.jpeg')"
-		one.style.backgroundRepeat= "no-repeat"
-		one.style.backgroundAttachment= "fixed"
-		one.style.backgroundSize= "cover"
-		one.style.height="500px"
+	function myOverFunction(data){
+
+		switch(data){
+			case 'one':
+				one.style.backgroundImage = "url('/assets/book.jpeg')"
+				one.style.backgroundRepeat= "no-repeat"
+				one.style.backgroundAttachment= "fixed"
+				one.style.backgroundSize= "cover"
+				one.style.backgroundPosition= "center"
+				one.style.height="350px"
+			break;
+			case 'two':
+				two.style.backgroundImage = "url('/assets/code5.jpeg')"
+				two.style.backgroundRepeat= "no-repeat"
+				two.style.backgroundAttachment= "fixed"
+				two.style.backgroundSize= "cover"
+				two.style.backgroundPosition= "center"
+				two.style.height="350px"
+			break;
+			case 'three':
+				three.style.backgroundImage = "url('/assets/book.jpeg')"
+				three.style.backgroundRepeat= "no-repeat"
+				three.style.backgroundAttachment= "fixed"
+				three.style.backgroundSize= "cover"
+				three.style.backgroundPosition= "center"
+				three.style.height="350px"
+			break;
+			case 'four':
+				four.style.backgroundImage = "url('/assets/code5.jpeg')"
+				four.style.backgroundRepeat= "no-repeat"
+				four.style.backgroundAttachment= "fixed"
+				four.style.backgroundSize= "cover"
+				four.style.backgroundPosition= "center"
+				four.style.height="350px"
+			break;
+			case 'five':
+				five.style.backgroundImage = "url('/assets/book.jpeg')"
+				five.style.backgroundRepeat= "no-repeat"
+				five.style.backgroundAttachment= "fixed"
+				five.style.backgroundSize= "cover"
+				five.style.backgroundPosition= "center"
+				five.style.height="350px"
+			break;
+			case 'six':
+				six.style.backgroundImage = "url('/assets/code5.jpeg')"
+				six.style.backgroundRepeat= "no-repeat"
+				six.style.backgroundAttachment= "fixed"
+				six.style.backgroundSize= "cover"
+				six.style.backgroundPosition= "center"
+				six.style.height="350px"
+			break;
+		}
 	};
-	function myOffFunction(){
+	function myOffFunction(data){
+
+	switch(data){
+			case 'one':
 		one.style.backgroundImage = "none"
 		one.style.height="175px"
+			break;
+			case 'two':
+		two.style.backgroundImage = "none"
+		two.style.height="175px"
+			break;
+			case 'three':
+		three.style.backgroundImage = "none"
+		three.style.height="175px"
+			break;
+			case 'four':
+		four.style.backgroundImage = "none"
+		four.style.height="175px"
+			break;
+			case 'five':
+		five.style.backgroundImage = "none"
+		five.style.height="175px"
+			break;
+			case 'six':
+		six.style.backgroundImage = "none"
+		six.style.height="175px"
+			break;
+		}
 	}
 
 </script>
