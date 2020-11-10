@@ -63,37 +63,46 @@ ul {
 	text-align: center;
 }
 
-@media (min-width: 576px){ 
-	.half-left {
-	  background-image: url('/assets/code5.jpeg');
-	  height: 500px;
-	  background-repeat: no-repeat;
-	  background-attachment: fixed;
-	  background-position: center;
-	  background-size: contain;
-	}
-}
+
 
 .half-left {
   background-image: url('/assets/code5.jpeg');
-  height: 500px;
+  height: 450px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* background-position: 50% 47%; */
+  background-position: center center;
   background-size: cover;
 }
-.half-right{
+.half-leftTwo {
   background-image: url('/assets/book.jpeg');
-  height: 500px;
+  height: 450px;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 100%;
+  background-position: center center;
   background-size: cover;
 }
-.half-right h3{
-  position: absolute;
-  bottom: 0;
+.half-leftThree {
+  background-image: url('/assets/code.jpeg');
+  height: 450px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 }
+
+.marketOther{
+  background-color: black;
+  text-align: center;
+  align-items: center;
+
+
+}
+
+
+
+
+
+.half-right{
+  height: 500px;
+}
+
 
 #footer { 
   background-color: rgb(43, 123, 239); 
